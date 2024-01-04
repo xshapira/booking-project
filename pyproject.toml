@@ -49,6 +49,7 @@ ignore = [
   "C901", # Comprehension is too complex (11 > 10)
   "W191", # indentation contains tabs,
   "B018", # avoid 'Found useless expression' in notebook
+  "I001",
 ]
 unfixable = ["F841"]
 extend-include = ["*.ipynb"]
