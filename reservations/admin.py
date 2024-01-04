@@ -1,9 +1,9 @@
 from django.contrib import admin
 
-from reservations.models import Reservation
+from reservations.models import Person, Reservation
 
 
-@admin.register(Reservation)
+@admin.register(Person)
 class PersonAdmin(admin.ModelAdmin):
     list_display = ("name",)
 
