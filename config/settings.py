@@ -8,6 +8,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 DOTENV_FILE = Path(BASE_DIR, ".env")
+DOTENV_PROD = None
 
 
 class AppSettings(BaseSettings):
@@ -155,3 +156,6 @@ STATICFILES_DIRS = [BASE_DIR.joinpath("config/static")]
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Django Admin URL
+ADMIN_URL = "admin/"
